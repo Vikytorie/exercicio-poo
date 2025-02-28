@@ -8,7 +8,7 @@ public class App
         System.out.println("O fatorial de " + num + " é: " + fatoriar(num));
     }
 
-    public fatoriar(int num){
+    public static long fatoriar(int num){
        long fatorial = 1;
         for (int i = 1; i <= num; i++) {
             fatorial *= i; // Multiplica o valor atual pelo índice i
@@ -18,4 +18,4 @@ public class App
 
         }
     }
-}
+
