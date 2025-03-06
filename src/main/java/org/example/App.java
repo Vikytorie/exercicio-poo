@@ -1,12 +1,21 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
+
 public class App
 {
 
+    public static long fatoriar(int numfatoral){
+       long fatorial = 1;
+        for (int i = 1; i <= numfatoral; i++) {
+            fatorial *= i; // Multiplica o valor atual pelo índice i
+        }
+
+            return fatorial;
+
+        }
+    }
+  
+  
   public static int contarVogais(String str) {
         int contador = 0; //contador usado de vogais
         str = str.toLowerCase(); // Converte para minúsculas para facilitar a comparação
@@ -37,10 +46,12 @@ public class App
      return numero %2 == 0;
     }
     
-  // Início da main
-    public static void main( String[] args )
-    {
+  // Início da main-------------------------------------------------
+    public static void main( String[] args ){
 
+    int numfatoral = 5;
+    System.out.println("O fatorial de " + numfatoral + " é: " + fatoriar(numfatoral));  
+      
     int numero = 8;
 
     if (verificar(numero)) {
@@ -67,3 +78,4 @@ public class App
         System.out.println("Número de vogais na frase " + texto + ": " + contarVogais(texto));
 
 }
+
