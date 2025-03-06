@@ -1,9 +1,15 @@
 package org.example;
 
 
+
 public class App
 {
+  //Métodos
 
+  public static int soma(int n1, int n2){
+        return n1 +n2;
+  
+    
     public static long fatoriar(int numfatoral){
        long fatorial = 1;
         for (int i = 1; i <= numfatoral; i++) {
@@ -44,10 +50,18 @@ public class App
     
       public static boolean verificar(int numero){
      return numero %2 == 0;
+
     }
     
   // Início da main-------------------------------------------------
     public static void main( String[] args ){
+      
+      
+      
+      int resultado = soma(3,5);
+        System.out.println("A soma é: " + resultado);
+      
+      
 
     int numfatoral = 5;
     System.out.println("O fatorial de " + numfatoral + " é: " + fatoriar(numfatoral));  
