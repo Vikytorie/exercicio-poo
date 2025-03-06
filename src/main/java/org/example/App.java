@@ -22,6 +22,7 @@ public class App
     public static double calcularMedia(double num1, double num2) {
         return (num1 + num2) / 2.0;
     }
+    
 
  public static String inverterString(String str) {
         String invertida = "";
@@ -30,9 +31,26 @@ public class App
         }
         return invertida;
     }
-  
+    
+    
+      public static boolean verificar(int numero){
+     return numero %2 == 0;
+    }
+    
+  // Início da main
     public static void main( String[] args )
     {
+
+    int numero = 8;
+
+    if (verificar(numero)) {
+        System.out.println(numero + " é par");
+    } else {
+        System.out.println(numero + " é impar");
+    }
+    }
+  
+
         double numero1 = 39;
         double numero2 = 14;
 
@@ -47,7 +65,5 @@ public class App
       
         String texto = "Save Rock and Roll!"; // texto será inserido no método
         System.out.println("Número de vogais na frase " + texto + ": " + contarVogais(texto));
-
-    
 
 }
