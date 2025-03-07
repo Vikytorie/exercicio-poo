@@ -1,6 +1,7 @@
 package org.example;
-
-
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.lang.*;
 
 public class App
 {
@@ -8,6 +9,7 @@ public class App
 
   public static int soma(int n1, int n2){
         return n1 +n2;
+  }
   
     
     public static long fatoriar(int numfatoral){
@@ -19,7 +21,7 @@ public class App
             return fatorial;
 
         }
-    }
+
   
   
   public static int contarVogais(String str) {
@@ -32,6 +34,8 @@ public class App
                 contador++;
             }
         }
+      return contador;
+  }
   
   
     public static double calcularMedia(double num1, double num2) {
@@ -59,7 +63,7 @@ public class App
       
       
       int resultado = soma(3,5);
-        System.out.println("A soma é: " + resultado);
+        System.out.println("A soma é de 5 e 3 é: " + resultado);
       
       
 
@@ -73,7 +77,7 @@ public class App
     } else {
         System.out.println(numero + " é impar");
     }
-    }
+
   
 
         double numero1 = 39;
@@ -88,8 +92,7 @@ public class App
         System.out.println("String invertida: " + inverterString(texto));
       
       
-        String texto = "Save Rock and Roll!"; // texto será inserido no método
-        System.out.println("Número de vogais na frase " + texto + ": " + contarVogais(texto));
+        String texto2 = "Save Rock and Roll!"; // texto será inserido no método
+        System.out.println("Número de vogais na frase " + texto2 + ": " + contarVogais(texto2));
 
-}
-
+}}
